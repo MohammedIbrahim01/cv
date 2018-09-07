@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_facebook"
+        android:orderInCategory="0"
+        android:title="facebook" />
+    <item
+        android:id="@+id/action_linkedIn"
+        android:orderInCategory="0"
+        android:title="linkedIn" />
+    <item
+        android:id="@+id/action_google"
+        android:orderInCategory="0"
+        android:title="goolge" />
+    <item
+        android:id="@+id/action_previous_work"
+        android:orderInCategory="0"
+        android:title="prev. Work" />
+
+    <item
+        android:id="@+id/action_previous_education"
+        android:orderInCategory="0"
+        android:title="prev. Education" />
+
+    <item
+        android:id="@+id/action_memories"
+        android:orderInCategory="0"
+        android:title="Memories" />
+
+
+</menu>
