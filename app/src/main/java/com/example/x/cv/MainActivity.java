@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
     private EditText first, second, email, pass;
     private Button submit;
-
     private CheckBox rem;
 
     @Override
