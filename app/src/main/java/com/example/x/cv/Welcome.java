@@ -81,24 +81,24 @@ public class Welcome extends AppCompatActivity {
 
             return true;
 
-        }else if (item.getItemId() == R.id.action_previous_education) {
-
-
-
-            return true;
-
-        }else if (item.getItemId() == R.id.action_previous_work) {
+        } else if (item.getItemId() == R.id.action_previous_education) {
 
 
             return true;
 
-        }else if (item.getItemId() == R.id.action_memories) {
+        } else if (item.getItemId() == R.id.action_previous_work) {
 
 
             return true;
 
-        }else if (item.getItemId() == R.id.action_logout) {
+        } else if (item.getItemId() == R.id.action_memories) {
 
+
+            return true;
+
+        } else if (item.getItemId() == R.id.action_logout) {
+            sharedPreferences.edit().clear().commit();
+            startActivity(new Intent(Welcome.this, MainActivity.class));
             Toast.makeText(Welcome.this , "logged out",Toast.LENGTH_LONG).show();
             return true;
 
