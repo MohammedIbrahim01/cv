@@ -99,7 +99,7 @@ public class Welcome extends AppCompatActivity {
         } else if (item.getItemId() == R.id.action_logout) {
             sharedPreferences.edit().clear().commit();
             startActivity(new Intent(Welcome.this, MainActivity.class));
-            Toast.makeText(Welcome.this , "logged out",Toast.LENGTH_LONG).show();
+            Toast.makeText(Welcome.this , "you are logged out",Toast.LENGTH_LONG).show();
             return true;
 
         }
