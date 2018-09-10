@@ -13,7 +13,7 @@
     <item
         android:id="@+id/action_google"
         android:orderInCategory="0"
-        android:title="goolge" />
+        android:title="google" />
     <item
         android:id="@+id/action_previous_work"
         android:orderInCategory="0"
@@ -28,6 +28,11 @@
         android:id="@+id/action_memories"
         android:orderInCategory="0"
         android:title="Memories" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="0"
+        android:title="log out" />
 
 
 </menu>

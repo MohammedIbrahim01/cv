@@ -12,6 +12,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Welcome extends AppCompatActivity {
 
@@ -80,23 +81,29 @@ public class Welcome extends AppCompatActivity {
 
             return true;
 
-        }else if (item.getItemId() == R.id.action_previous_education) {
-
-
-
-            return true;
-
-        }else if (item.getItemId() == R.id.action_previous_work) {
+        } else if (item.getItemId() == R.id.action_previous_education) {
 
 
             return true;
 
-        }else if (item.getItemId() == R.id.action_memories) {
+        } else if (item.getItemId() == R.id.action_previous_work) {
 
 
+            return true;
+
+        } else if (item.getItemId() == R.id.action_memories) {
+
+
+            return true;
+
+        } else if (item.getItemId() == R.id.action_logout) {
+            sharedPreferences.edit().clear().commit();
+            startActivity(new Intent(Welcome.this, LoginActivity.class));
+            Toast.makeText(Welcome.this , "you are logged out",Toast.LENGTH_LONG).show();
             return true;
 
         }
+
         return super.onOptionsItemSelected(item);
     }
 }
