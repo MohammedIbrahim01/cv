@@ -12,6 +12,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Welcome extends AppCompatActivity {
 
@@ -96,7 +97,13 @@ public class Welcome extends AppCompatActivity {
 
             return true;
 
+        }else if (item.getItemId() == R.id.action_logout) {
+
+            Toast.makeText(Welcome.this , "logged out",Toast.LENGTH_LONG).show();
+            return true;
+
         }
+
         return super.onOptionsItemSelected(item);
     }
 }

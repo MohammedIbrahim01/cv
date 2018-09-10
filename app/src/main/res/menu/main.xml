@@ -29,5 +29,10 @@
         android:orderInCategory="0"
         android:title="Memories" />
 
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="0"
+        android:title="log out" />
+
 
 </menu>
