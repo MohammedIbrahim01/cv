@@ -63,6 +63,7 @@ public class LoginActivity extends AppCompatActivity {
                 sharedPreferences.edit().putBoolean(KEY_REMEMBER_ME, rememberMeCheckBox.isChecked()).commit();
 
                 startActivity(new Intent(LoginActivity.this, Welcome.class));
+                finish();
             }
         });
     }
