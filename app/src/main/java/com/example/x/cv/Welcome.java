@@ -6,8 +6,13 @@ import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Layout;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -41,7 +46,7 @@ public class Welcome extends AppCompatActivity {
 
         String fullName = "";
 
-        fullName = sharedPreferences.getString("first", "") + " " + sharedPreferences.getString("second", "");
+        fullName = sharedPreferences.getString(LoginActivity.KEY_FIRST_NAME, "") + " " + sharedPreferences.getString(LoginActivity.KEY_SECOND_NAME, "");
 
         welcome.append(fullName);
     }
@@ -97,13 +102,24 @@ public class Welcome extends AppCompatActivity {
             return true;
 
         } else if (item.getItemId() == R.id.action_logout) {
+            toast();
             sharedPreferences.edit().clear().commit();
             startActivity(new Intent(Welcome.this, LoginActivity.class));
-            Toast.makeText(Welcome.this , "you are logged out",Toast.LENGTH_LONG).show();
             return true;
-
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    void toast() {
+        LayoutInflater inflater = getLayoutInflater();
+        View toastView = inflater.inflate(R.layout.custom_toast, (ViewGroup) findViewById(R.id.toast));
+        TextView toastTextView = toastView.findViewById(R.id.toastMsg);
+        toastTextView.append(" " + sharedPreferences.getString(LoginActivity.KEY_FIRST_NAME, ""));
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.CENTER, 0, 80);
+        toast.setView(toastView);
+        toast.setDuration(Toast.LENGTH_SHORT);
+        toast.show();
     }
 }
