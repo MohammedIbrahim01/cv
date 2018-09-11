@@ -88,7 +88,7 @@ public class Welcome extends AppCompatActivity {
 
         } else if (item.getItemId() == R.id.action_previous_education) {
 
-
+            startActivity(new Intent(Welcome.this,EducationActivity.class));
             return true;
 
         } else if (item.getItemId() == R.id.action_previous_work) {

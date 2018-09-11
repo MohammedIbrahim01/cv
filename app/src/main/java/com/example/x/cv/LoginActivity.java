@@ -17,7 +17,6 @@ public class LoginActivity extends AppCompatActivity {
     public static final String KEY_EMAIL = "key-email";
     public static final String KEY_PASSWORD = "key-password";
     public static final String KEY_REMEMBER_ME = "key-remember-me";
-
     private SharedPreferences sharedPreferences;
     private EditText firstNameEditText, secondNameEditText, emailEditText, passwordEditText;
     private Button loginButton;
