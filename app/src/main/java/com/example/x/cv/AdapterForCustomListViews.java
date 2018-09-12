@@ -22,9 +22,11 @@ public class AdapterForCustomListViews extends ArrayAdapter<CustomObjectForArray
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         View listItemView = convertView;
+
         if (listItemView == null) {
+
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.activity_education, parent, false);
+                    R.layout.education_item_list, parent, false);
         }
         CustomObjectForArrays current = getItem(position);
         TextView fromDataTextView=listItemView.findViewById(R.id.fromDataTextView);
@@ -44,4 +46,6 @@ public class AdapterForCustomListViews extends ArrayAdapter<CustomObjectForArray
 
         return listItemView;
     }
+
+
 }

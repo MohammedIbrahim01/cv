@@ -19,7 +19,6 @@ public class CustomObjectForArrays {
         this.donorTextView = donorTextView;
         this.logoForDegree = logoForDegree;
     }
-
     public String getFromDataTextView() {
         return fromDataTextView;
     }
