@@ -19,6 +19,7 @@ import android.webkit.WebViewClient;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.x.cv.memories.MemoriesActivity;
 import com.example.x.cv.previous_work.PreviousWorkActivity;
 
 public class Welcome extends AppCompatActivity {
@@ -90,7 +91,7 @@ public class Welcome extends AppCompatActivity {
 
         } else if (item.getItemId() == R.id.action_previous_education) {
 
-            startActivity(new Intent(Welcome.this,EducationActivity.class));
+            startActivity(new Intent(Welcome.this, EducationActivity.class));
             return true;
 
         } else if (item.getItemId() == R.id.action_previous_work) {
@@ -100,7 +101,7 @@ public class Welcome extends AppCompatActivity {
 
         } else if (item.getItemId() == R.id.action_memories) {
 
-
+            startActivity(new Intent(Welcome.this, MemoriesActivity.class));
             return true;
 
         } else if (item.getItemId() == R.id.action_logout) {
