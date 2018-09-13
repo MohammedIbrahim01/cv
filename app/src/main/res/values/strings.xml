@@ -1,6 +1,71 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">CV</string>
     <string name="fnamemessage"> Enter valid name </string>
     <string name="lnamemessage"> Enter valid name </string>
     <string name="emailmessage"> Enter valid email address </string>
+=======
+    <string name="app_name">cv</string>
+
+
+    <string-array name="fromDataTextView">
+        <item>1996</item>
+        <item>2002</item>
+        <item>2005</item>
+        <item>2008</item>
+        <item>2012</item>
+        <item>2015</item>
+        <item>2017</item>
+    </string-array>
+
+    <string-array name="toDataTextView">
+        <item>2002</item>
+        <item>2005</item>
+        <item>2008</item>
+        <item>2012</item>
+        <item>2015</item>
+        <item>2018</item>
+        <item>Now</item>
+    </string-array>
+    <string-array name="specializationTextView">
+        <item>Not Applicable</item>
+        <item>Not Applicable</item>
+        <item>Not Applicable</item>
+        <item>Chemist</item>
+        <item>fuel-branch</item>
+        <item>Operational Quality</item>
+        <item>Java/android</item>
+    </string-array>
+    <string-array name="academicDegreeTextView">
+        <item>primary school</item>
+        <item>preparatory school</item>
+        <item>secondary school</item>
+        <item>faculty of Science</item>
+        <item>Egyptian officer</item>
+        <item>Quality assurance</item>
+        <item>Programming</item>
+    </string-array>
+
+
+    <string-array name="gradeTextView">
+        <item>excellent</item>
+        <item>very good</item>
+        <item>excellent</item>
+        <item>very good</item>
+        <item>good idol</item>
+        <item>excellent</item>
+        <item>senior</item>
+    </string-array>
+    <string-array name="donorTextView">
+        <item>metwally shaarawy</item>
+        <item>Al-kewery</item>
+        <item>Al-kewery</item>
+        <item>Azhar-Assiut</item>
+        <item>Egyption army</item>
+        <item>Pharco</item>
+        <item>senior steps</item>
+    </string-array>
+
+>>>>>>> daec3359ebe573d9e054be7a4010b810bc722830
 </resources>
+
