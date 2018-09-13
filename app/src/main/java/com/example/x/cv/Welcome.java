@@ -19,6 +19,8 @@ import android.webkit.WebViewClient;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.x.cv.previous_work.PreviousWorkActivity;
+
 public class Welcome extends AppCompatActivity {
 
     SharedPreferences sharedPreferences;
@@ -93,7 +95,7 @@ public class Welcome extends AppCompatActivity {
 
         } else if (item.getItemId() == R.id.action_previous_work) {
 
-
+            startActivity(new Intent(Welcome.this, PreviousWorkActivity.class));
             return true;
 
         } else if (item.getItemId() == R.id.action_memories) {

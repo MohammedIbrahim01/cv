@@ -1,11 +1,8 @@
 <resources>
-<<<<<<< HEAD
-    <string name="app_name">CV</string>
+    <string name="app_name">cv</string>
     <string name="fnamemessage"> Enter valid name </string>
     <string name="lnamemessage"> Enter valid name </string>
     <string name="emailmessage"> Enter valid email address </string>
-=======
-    <string name="app_name">cv</string>
 
 
     <string-array name="fromDataTextView">
@@ -66,6 +63,6 @@
         <item>senior steps</item>
     </string-array>
 
->>>>>>> daec3359ebe573d9e054be7a4010b810bc722830
+    >>>>>>> daec3359ebe573d9e054be7a4010b810bc722830
 </resources>
 

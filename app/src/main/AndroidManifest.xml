@@ -24,5 +24,7 @@
         <activity
             android:name=".EducationActivity"
             android:label="Education History" />
+        <activity android:name=".previous_work.PreviousWorkActivity"></activity>
     </application>
+
 </manifest>
