@@ -29,6 +29,9 @@ dependencies {
     //RecyclerView
     implementation 'com.android.support:recyclerview-v7:27.1.1'
 
+    //design
+    implementation 'com.android.support:design:27.1.1'
+
     //Room
     def room_version = "1.1.1"
     implementation "android.arch.persistence.room:runtime:$room_version"

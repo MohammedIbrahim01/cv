@@ -1,9 +1,12 @@
-package com.example.x.cv.previous_work;
+package com.example.x.cv.database;
 
 import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
+
+import com.example.x.cv.previous_work.data.PreviousWork;
+import com.example.x.cv.previous_work.data.PreviousWorkDao;
 
 @Database(entities = PreviousWork.class, version = 1, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {

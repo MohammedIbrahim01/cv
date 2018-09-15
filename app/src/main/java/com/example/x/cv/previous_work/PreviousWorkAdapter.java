@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.x.cv.R;
+import com.example.x.cv.previous_work.data.PreviousWork;
 
 import java.util.List;
 
@@ -39,7 +40,7 @@ public class PreviousWorkAdapter extends RecyclerView.Adapter<PreviousWorkAdapte
 
     @Override
     public int getItemCount() {
-        return previousWorkList.size();
+        return previousWorkList == null? 0 : previousWorkList.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

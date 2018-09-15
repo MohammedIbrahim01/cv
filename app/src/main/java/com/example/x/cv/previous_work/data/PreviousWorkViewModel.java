@@ -1,9 +1,12 @@
-package com.example.x.cv.previous_work;
+package com.example.x.cv.previous_work.data;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.support.annotation.NonNull;
+
+import com.example.x.cv.database.AppDatabase;
+import com.example.x.cv.previous_work.data.PreviousWork;
 
 import java.util.List;
 

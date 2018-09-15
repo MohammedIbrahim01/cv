@@ -1,4 +1,4 @@
-package com.example.x.cv.previous_work;
+package com.example.x.cv.previous_work.data;
 
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.Ignore;
