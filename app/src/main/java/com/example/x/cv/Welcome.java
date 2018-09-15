@@ -69,6 +69,7 @@ public class Welcome extends AppCompatActivity {
             Uri facebook = Uri.parse("https://www.facebook.com");
             Intent faceIntent = new Intent(Intent.ACTION_VIEW, facebook);
             startActivity(faceIntent);
+
             return true;
         } else if (item.getItemId() == R.id.action_google) {
 

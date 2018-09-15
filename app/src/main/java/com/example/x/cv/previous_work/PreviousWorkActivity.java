@@ -1,5 +1,8 @@
 package com.example.x.cv.previous_work;
 
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProviders;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,8 +15,7 @@ import java.util.List;
 
 public class PreviousWorkActivity extends AppCompatActivity {
 
-    private RecyclerView previousWorkListView;
-    private List<PreviousWork> previousWorkList;
+    private RecyclerView previousWorkRecyclerView;
     private PreviousWorkAdapter previousWorkAdapter;
 
     @Override
@@ -21,18 +23,26 @@ public class PreviousWorkActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_previous_work);
 
-        previousWorkListView = findViewById(R.id.previous_work_recyclerView);
-
-
-        previousWorkList = new ArrayList<>();
-        previousWorkList.add(new PreviousWork("facebook", "Software Engineer", "2014", "2016"));
-        previousWorkList.add(new PreviousWork("Google", "Software Engineer", "2016", "2018"));
+        previousWorkRecyclerView = findViewById(R.id.previous_work_recyclerView);
 
         previousWorkAdapter = new PreviousWorkAdapter();
-        previousWorkAdapter.setPreviousWorkList(previousWorkList);
+        previousWorkRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        previousWorkRecyclerView.setHasFixedSize(true);
+        previousWorkRecyclerView.setAdapter(previousWorkAdapter);
 
-        previousWorkListView.setLayoutManager(new LinearLayoutManager(this));
-        previousWorkListView.setHasFixedSize(true);
-        previousWorkListView.setAdapter(previousWorkAdapter);
+        setupPreviousWorkViewModel();
+    }
+
+    private void setupPreviousWorkViewModel() {
+
+        PreviousWorkViewModel previousWorkViewModel = ViewModelProviders.of(this).get(PreviousWorkViewModel.class);
+        previousWorkViewModel.getPreviousWorkList().observe(this, new Observer<List<PreviousWork>>() {
+            @Override
+            public void onChanged(@Nullable List<PreviousWork> previousWorks) {
+
+                previousWorkAdapter.setPreviousWorkList(previousWorks);
+                previousWorkAdapter.notifyDataSetChanged();
+            }
+        });
     }
 }
