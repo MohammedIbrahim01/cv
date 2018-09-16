@@ -22,11 +22,15 @@
             android:name=".Welcome"
             android:label="Welcome" />
         <activity
-            android:name=".EducationActivity"
+            android:name=".education_activity.EducationActivity"
             android:label="Education History" />
         <activity android:name=".previous_work.PreviousWorkActivity" />
         <activity android:name=".memories.MemoriesActivity" />
-        <activity android:name=".previous_work.AddPreviousWorkActivity"></activity>
+        <activity
+            android:name=".education_activity.CertificateActivity"
+            android:label="Touch out side to close"
+        android:theme="@style/AppTheme.certificateStyle"/>
+        <activity android:name=".previous_work.AddPreviousWorkActivity"/>
     </application>
 
 </manifest>
