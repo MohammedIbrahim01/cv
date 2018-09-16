@@ -19,6 +19,7 @@ import android.webkit.WebViewClient;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.x.cv.activities.Activities;
 import com.example.x.cv.memories.MemoriesActivity;
 import com.example.x.cv.previous_work.PreviousWorkActivity;
 
@@ -105,7 +106,12 @@ public class Welcome extends AppCompatActivity {
             startActivity(new Intent(Welcome.this, MemoriesActivity.class));
             return true;
 
-        } else if (item.getItemId() == R.id.action_logout) {
+        } else if (item.getItemId() == R.id.action_activities) {
+
+            startActivity(new Intent(Welcome.this, Activities.class));
+            return true;
+        }
+        else if (item.getItemId() == R.id.action_logout) {
             toast();
             sharedPreferences.edit().clear().commit();
             startActivity(new Intent(Welcome.this, LoginActivity.class));
