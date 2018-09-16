@@ -8,5 +8,9 @@
         <item name="colorAccent">@color/primaryLightColor</item>
         <item name="colorButtonNormal">@color/primaryLightColor</item>
     </style>
-
+<style name="AppTheme.certificateStyle">
+    
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowCloseOnTouchOutside">true</item>
+</style>
 </resources>

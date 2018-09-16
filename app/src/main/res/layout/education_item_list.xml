@@ -22,7 +22,7 @@
             android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/fromDataTextView"
+            android:id="@+id/fromDateTextView"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -41,7 +41,7 @@
             android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/toDataTextView"
+            android:id="@+id/toDateTextView"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
