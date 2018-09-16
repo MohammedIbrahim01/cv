@@ -1,4 +1,4 @@
-package com.example.x.cv;
+package com.example.x.cv.education_activity;
 
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -7,6 +7,10 @@ public class CustomObjectForArrays {
 
     private String fromDataTextView,toDataTextView,specializationTextView,academicDegreeTextView,gradeTextView,donorTextView;
     int logoForDegree;
+
+    public CustomObjectForArrays(int logoForDegree) {
+        this.logoForDegree = logoForDegree;
+    }
 
     public CustomObjectForArrays(String fromDataTextView, String toDataTextView, String specializationTextView,
                                  String academicDegreeTextView, String gradeTextView, String donorTextView,
@@ -27,7 +31,7 @@ public class CustomObjectForArrays {
         this.fromDataTextView = fromDataTextView;
     }
 
-    public String getToDataTextView() {
+    public String getToDateTextView() {
         return toDataTextView;
     }
 

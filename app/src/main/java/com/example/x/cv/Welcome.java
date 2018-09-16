@@ -6,7 +6,6 @@ import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -15,11 +14,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.x.cv.memories.MemoriesActivity;
+import com.example.x.cv.education_activity.EducationActivity;
+
 import com.example.x.cv.previous_work.PreviousWorkActivity;
 
 public class Welcome extends AppCompatActivity {

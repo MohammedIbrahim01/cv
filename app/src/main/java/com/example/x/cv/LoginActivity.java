@@ -93,7 +93,8 @@ public class LoginActivity extends AppCompatActivity {
         } else {
             check = false;
         }
-        return check;
+        //return check;
+        return true;
     }
 
     /*public boolean isValidPassword(String Password) {
@@ -121,7 +122,9 @@ public class LoginActivity extends AppCompatActivity {
         } else {
             check = false;
         }
-        return check;
+
+        //return check;
+        return true;
     }
     public boolean isValidlName(String lName) {
 
@@ -134,7 +137,8 @@ public class LoginActivity extends AppCompatActivity {
         } else {
             check = false;
         }
-        return check;
+        //return check;
+        return true;
     }
 
 }
