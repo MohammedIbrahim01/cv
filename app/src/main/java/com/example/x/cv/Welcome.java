@@ -17,6 +17,7 @@ import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.x.cv.activities.Activities;
 import com.example.x.cv.memories.MemoriesActivity;
 import com.example.x.cv.education_activity.EducationActivity;
 
@@ -90,6 +91,10 @@ public class Welcome extends AppCompatActivity {
 
             return true;
 
+        }  else if (item.getItemId() == R.id.action_activities) {
+
+            startActivity(new Intent(Welcome.this, Activities.class));
+            return true;
         } else if (item.getItemId() == R.id.action_previous_education) {
 
             startActivity(new Intent(Welcome.this, EducationActivity.class));

@@ -29,8 +29,13 @@
         <activity
             android:name=".education_activity.CertificateActivity"
             android:label="Touch out side to close"
-        android:theme="@style/AppTheme.certificateStyle"/>
-        <activity android:name=".previous_work.AddPreviousWorkActivity"/>
+            android:theme="@style/AppTheme.certificateStyle" />
+        <activity android:name=".previous_work.AddPreviousWorkActivity" />
+
+        <activity
+            android:name=".activities.Activities"
+            android:label="Activities"
+            android:theme="@style/AppTheme.activities" />
     </application>
 
 </manifest>

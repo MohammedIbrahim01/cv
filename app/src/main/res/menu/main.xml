@@ -15,6 +15,10 @@
         android:orderInCategory="0"
         android:title="google" />
     <item
+        android:id="@+id/action_activities"
+        android:orderInCategory="0"
+        android:title="Activities" />
+    <item
         android:id="@+id/action_previous_work"
         android:orderInCategory="0"
         android:title="prev. Work" />
