@@ -48,13 +48,12 @@ public class EducationActivity extends AppCompatActivity {
 
 
                 startActivity(new Intent(EducationActivity.this, CertificateActivity.class).putExtra("fetchedImage", logoForDegree[position]));
-
+                Log.v("mohamed", "zizos");
             }
         });
         listView.setAdapter(adapter);
-        Log.v("zizo","mohamed");
-    }
 
+    }
 
     public void fetchArrays() {
 
