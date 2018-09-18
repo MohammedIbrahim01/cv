@@ -48,7 +48,7 @@ public class EducationActivity extends AppCompatActivity {
 
 
                 startActivity(new Intent(EducationActivity.this, CertificateActivity.class).putExtra("fetchedImage", logoForDegree[position]));
-                Log.v("mohamed", "zizos");
+                Log.v("amira", "mohamed&zizo");
             }
         });
         listView.setAdapter(adapter);
