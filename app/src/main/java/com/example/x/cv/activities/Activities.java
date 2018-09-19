@@ -9,13 +9,12 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toolbar;
+import android.support.v7.widget.Toolbar;
 
 import com.example.x.cv.R;
 
 public class Activities extends AppCompatActivity {
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +61,4 @@ public class Activities extends AppCompatActivity {
         });
     }
 
-
-    private void setSupportActionBar(Toolbar toolbar) {
-    }
 }

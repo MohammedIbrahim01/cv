@@ -6,7 +6,6 @@ import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -15,7 +14,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.webkit.WebViewClient;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -90,7 +88,10 @@ public class Welcome extends AppCompatActivity {
 
 
             return true;
+        }  else if (item.getItemId() == R.id.action_activities) {
 
+            startActivity(new Intent(Welcome.this, Activities.class));
+            return true;
         } else if (item.getItemId() == R.id.action_previous_education) {
 
             startActivity(new Intent(Welcome.this, EducationActivity.class));
@@ -106,12 +107,7 @@ public class Welcome extends AppCompatActivity {
             startActivity(new Intent(Welcome.this, MemoriesActivity.class));
             return true;
 
-        } else if (item.getItemId() == R.id.action_activities) {
-
-            startActivity(new Intent(Welcome.this, Activities.class));
-            return true;
-        }
-        else if (item.getItemId() == R.id.action_logout) {
+        } else if (item.getItemId() == R.id.action_logout) {
             toast();
             sharedPreferences.edit().clear().commit();
             startActivity(new Intent(Welcome.this, LoginActivity.class));

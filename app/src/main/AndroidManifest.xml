@@ -18,9 +18,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Welcome" />
-        <activity android:name=".EducationActivity" />
-        <activity android:name=".activities.Activities"></activity>
+        <activity
+            android:name=".Welcome"
+            android:label="Welcome" />
+
+        <activity
+            android:name=".education_activity.EducationActivity"
+            android:label="Education History" />
+        <activity android:name=".previous_work.PreviousWorkActivity" />
+
+        <activity android:name=".memories.MemoriesActivity" />
+
+        <activity
+            android:name=".education_activity.CertificateActivity"
+            android:label="Touch out side to close"
+            android:theme="@style/AppTheme.certificateStyle" />
+        <activity android:name=".previous_work.AddPreviousWorkActivity" />
+
+        <activity
+            android:name=".activities.Activities"
+            android:label="Activities"
+            android:theme="@style/AppTheme.activities" />
     </application>
 
 </manifest>
