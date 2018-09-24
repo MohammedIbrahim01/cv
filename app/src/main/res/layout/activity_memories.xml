@@ -5,11 +5,11 @@
     android:id="@+id/gridView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:columnWidth="50dp"
     android:gravity="center"
     android:horizontalSpacing="6dp"
-    android:numColumns="auto_fit"
+    android:numColumns="3"
     android:stretchMode="columnWidth"
+    android:columnWidth="80dp"
     android:verticalSpacing="6dp"
     tools:context=".memories.MemoriesActivity">
 
