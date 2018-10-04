@@ -3,7 +3,7 @@
     <string name="fnamemessage"> Enter valid name </string>
     <string name="lnamemessage"> Enter valid name </string>
     <string name="emailmessage"> Enter valid email address </string>
-
+    <string name="facebook_app_id">1973335959632166</string>
     <string-array name="fromDateTextView">
         <item>1996</item>
         <item>2002</item>

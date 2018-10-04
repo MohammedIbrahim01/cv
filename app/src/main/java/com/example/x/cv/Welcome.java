@@ -28,7 +28,7 @@ public class Welcome extends AppCompatActivity {
     SharedPreferences sharedPreferences;
     TextView welcome;
     WebView webView;
-
+    public static String socialName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +46,10 @@ public class Welcome extends AppCompatActivity {
 
     void handling() {
 
+        if(!socialName.isEmpty()){
+            welcome.append(socialName);
+            return;
+        }
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(Welcome.this);
 
         String fullName = "";
